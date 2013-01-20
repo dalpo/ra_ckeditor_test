@@ -5,8 +5,28 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'jquery-rails'
+
 gem 'sqlite3'
 
+gem 'devise'
+gem 'devise-i18n'
+
+gem 'rails_admin'
+gem 'rails_admin-i18n'
+
+gem 'ckeditor'
+
+gem "carrierwave"
+gem "mini_magick"
+
+group :development do
+  gem 'thin'
+  gem 'sextant'
+  gem 'wirble'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,8 +39,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
