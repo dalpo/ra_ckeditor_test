@@ -5,7 +5,7 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '2.1.4'
 
 gem 'sqlite3'
 
@@ -19,6 +19,8 @@ gem 'ckeditor'
 
 gem "carrierwave"
 gem "mini_magick"
+
+gem 'ffaker'
 
 group :development do
   gem 'thin'
