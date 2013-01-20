@@ -1,9 +1,11 @@
 RaCkeditorTest::Application.routes.draw do
-  get "pages/index"
+
+  mount Ckeditor::Engine => '/ckeditor'
 
   devise_for :users
-
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  root to: "pages#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
